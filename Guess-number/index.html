@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="box">
+        <p>Enter 10 random numbers between 1 to 100</p>
+        <h1>Guess a Number</h1>
+        <form>
+            <input type="text" id="input">
+            <button type="submit" id="btn">Submit Guess</button>
+        </form>
+        <p>Previous Guesses: <span id="pre-guesses"></span></p>
+        <p>Guesses Remaining: <span id="rem-guesses"></span></p>
+        <h2 id="show"></h2>
+        <button id="newGame">Start New Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<style>
+    body{
+        background-color: rgba(43, 42, 42, 0.623);
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+</style>
+</html>

@@ -1,0 +1,70 @@
+body {
+    background-color: rgba(0, 0, 0, 0.815);
+}
+.box {
+    width: 60vw;
+    /* height: 60vh; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.815);
+}
+.feedbakes{
+    display: flex;
+    justify-content: space-evenly;
+}
+.feedbakes button {
+    font-size: 8vw;
+    margin-inline: 15px;
+    border-radius: 5%;
+    cursor: pointer;
+    background: none;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+}
+.rating p {
+    color: #fff;
+    font-size: 2.5vw;
+    margin-top: 10px;
+}
+.feedbakes button:hover,
+.feedbakes button.active
+ {
+    background: #ccc;
+    scale: 1.1;
+}
+.send_feedback {
+    font-size: 2.3vw;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ccc;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.815);
+    border: 0;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+.send_feedback:hover {
+    background: #ffffff;
+}
+.js-text {
+    font-size: 4.5vw;
+    line-height: 25px;
+}
+@media (max-width: 980px){
+    .box {
+        width: 80vw;
+    }
+    .feedbakes button {
+        font-size: 15vw;
+    }
+    .rating p{
+        font-size: 4vw;
+    }
+    .send_feedback {
+        font-size: 5vw;
+    }
+}
